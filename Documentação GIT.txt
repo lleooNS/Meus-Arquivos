@@ -1,0 +1,91 @@
+COMANDOS DO GIT
+
+//CRIA UM REPOSITÓRIO VAZIO
+git init
+
+//VERIFICA SE EXISTEM MUDANÇAS PENDENTES
+git status
+
+//ADICIONA ARQUIVOS
+git add nomeArquivo.extenção
+
+//ADICIONA UMA MENSAGEM DE LEMBRANÇA
+git commit -m "Mensagem de lenbrança"
+
+//ATALHO PARA PULAR A ETAPA DO GITADD
+git commit -a -m "Mensagem"
+
+//CRIANDO UM ARQUIVO.GITIGNORE, IGNORA ALGUNS ARQUIVOS
+//DENTRO DO ARQUIVO
+
+nomeArquivo.txt 
+ou pasta
+ex/
+
+//MOSTRA AS ALTERAÇÕES REALIZADAS
+git diff ou git diff -staged
+
+git log
+git log --pretty=oneline
+git log --oneline
+
+//ABRE A INTERFACE GRÁFICA
+gitk
+
+//EDITAR UM COMMIT
+git commit --amend -m "Mensagem chave"
+
+//RETORNA O ÚLTIMNO COMMIT SALVO
+git checkout -- nomeArquivo
+
+//REMOVER ARQUIVO
+git rm nomeArquivo
+
+//CRIANDO UMA TAG
+git tag -a v1.0 -m "versao 1.0"
+//COLOCA TAG EM UMA VERSÃO EXISTENTE
+git tag -a v1.0 3654643chave543534 -m "versao 1.0"
+
+//MOSTRA TAG
+git show v0.0
+
+//CRIA UM AMBIENTE DE TESTES
+git branch teste
+
+//MUDA PARA ESTE AMBIENTE
+git checkout -b teste
+
+//MESCLA OS TESTES AO ARQUIVO MASTER
+git marge teste
+
+//DELETA O AMBIENTE
+git branch -d teste
+
+//CRIE UM REPOSITÓRIO E MARQUE A CAIXA COM README
+//COPIE O ENDEREÇO PARA CLONAR
+git clone https://github.com/ntileo/Meus-Arquivos.git nomePasta
+
+//ENVIAR ARQUIVOS PARA O GITHUB
+git push origin master
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
